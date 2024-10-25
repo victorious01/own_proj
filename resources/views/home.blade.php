@@ -29,7 +29,9 @@
 </head>
 <body>
     <div class="box">1</div>
+    
     <input type="name" name="name" placeholder="name">
+    
     <textarea name="text"> name </textarea>
     <div class="box">2</div>
     <div class="box">3</div>
