@@ -29,7 +29,13 @@
 </head>
 <body>
     <div class="box">1</div>
-    <input type="name" name="name">
+    
+    <form action="display-bg" method='POST'>
+        @csrf
+        @method('PUT');
+        <input type="name" name="name">
+        <button style="background-color: #0071FF">go to display page</button>
+    </form>
     <div class="box">2</div>
     <div class="box">3</div>
     <div class="box">4</div>
