@@ -9,13 +9,12 @@
             min-height: 800px;
             border: 8px solid black;
             display: flex;
-            flex-direction:row;
+            flex-direction:column;
             justify-content: center;
             align-items: center;
             gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
             align-content: flex-start;
         }
         .box {
@@ -32,11 +31,12 @@
     
     <form action="display-bg" method='POST'>
         @csrf
-        @method('PUT');
-        <input type="name" name="name">
+        <input type="name" name="name" placeholder="name">
+        <input type="email" name="email" placeholder="email">
+        <input type="password" name="password" placeholder="password">
         <button style="background-color: #0071FF">go to display page</button>
     </form>
-    <div class="box">2</div>
+    <div class="box">1</div>
     <div class="box">3</div>
     <div class="box">4</div>
     <div class="box">5</div>    

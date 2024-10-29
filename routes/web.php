@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Route\DisplayController;
+use App\Http\Controllers\DisplayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::post('display-bg', [DisplayController::class, 'displaymeth']);
+Route::post('/display-bg', [DisplayController::class, 'displayMeth']);

@@ -6,7 +6,8 @@
     <title>display</title>
 </head>
 <body>
-    <h1>welcome to display page!!!</h1>
-    <p>Name: {{ $name ?? 'No name provided' }}</p>
+    <h1>welcome to display page!!! {{$name}}</h1>
+    <p>Name: {{$name}} we have so many features that you can learn and get from here!</p>
+    
 </body>
 </html>

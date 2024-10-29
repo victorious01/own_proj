@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\DisplayController;
-use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
 
-class DisplayController extends BaseController
+class DisplayController extends Controller
 {
-    public function displaymeth()
-    {
-        $name = request('name'); // Retrieve 'name' input from the request
-        return view('display'); // Pass 'name' to the view
-    }
+   //
+
+   public function displayMeth(Request $request){
+    $name = $request->input('name');
+    return view('display', ['name'=>$name]);
+   }
 }
